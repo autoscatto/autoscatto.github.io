@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Autoscatto's soup</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+    <link href="css/kube.min.css" rel='stylesheet' type='text/css'/>
+    <link href="css/styles.css" rel='stylesheet' type='text/css'/>
+
+</head>
+<body>
+    <div class="units-row">
+        <div class="unit-20" id="bsx">
+            <!-- sidebar -->
+            <p></p>
+            <div class="flotto">
+              <div>
+                <ul>
+                  <li><a href="#REPO" class="btn btn-green width-100 bleft" title="Project">Project</a></li>
+                  <li><a href="#CONTACT" class="btn btn-green width-100 bleft" title="Contact">Contact</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+        <div class="unit-80">
+            <!-- content -->
+            <div id="title">
+              <h1>Autoscatto's soup</h1>
+              <h2>Noise</h2>
+            </div>
+            <br />
+            <div class="box" id="REPO">
+            <h3><a href="#REPO" title="repository">Project</a></h3>
+            <div id="git-repo"></div>
+            </div>
+            <div class="box" id="CONTACT">
+              <h3><a href="#CONTACT" title="Contact">Contact me</a></h3>
+              <h4>Email: <a href="mailto:4utoscatto@gmail.com" title="Contact me by Email">4utoscatto@gmail.com</a> (<a href="/0xC549D1EB.asc" title="Download my PGP Key">0xC549D1EB</a>)</h4>
+            </div>
+        </div>
+    </div>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/git.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function() { $("#git-repo").loadRepositories("autoscatto");});
+</script>
+</body>
+</html>
